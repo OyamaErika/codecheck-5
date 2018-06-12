@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class App {
 	public static void main(String[] args) {
-		int crd = Integer.parseInt(args[0]);
+		String crdNo = args[0];
+		int crd = Integer.parseInt(crdNo);
 		ArrayList<Integer> listPower = new ArrayList<Integer>();
 		ArrayList<Integer> listCost = new ArrayList<Integer>();
 		int num = 0;
