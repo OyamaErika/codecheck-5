@@ -37,7 +37,7 @@ public class App {
 			if (max == 0) {
 				deleteFlg = 0;
 			} else {
-				mp = mp - listPower.get(deleteNum);
+				mp = mp - listCost.get(deleteNum);
 				ans = ans + max;
 				listPower.remove(deleteNum);
 				listCost.remove(deleteNum);
