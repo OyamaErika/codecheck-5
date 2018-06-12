@@ -20,23 +20,25 @@ public class App {
 
 		while (deleteFlg == 1) {
 			int mp = Integer.parseInt(args[1]);
-			int maxNum = 0;
-			int tempNum = 0;
+			int max = 0;
+			int power = 0;
+			int cost = 0;
 			int deleteNum = 0;
 
 			for (int i = 0, l = listPower.size(); i < l; i++) {
-				tempNum = listPower.get(i);
-				if (tempNum > maxNum && mp >= tempNum) {
-					maxNum = tempNum;
+				power = listPower.get(i);
+				cost = listCost.get(i);
+				if (power > max && mp >= cost) {
+					max = power;
 					deleteNum = i;
 				}
 			}
 
-			if (maxNum == 0) {
+			if (max == 0) {
 				deleteFlg = 0;
 			} else {
-				mp = mp - maxNum;
-				ans = ans + maxNum;
+				mp = mp - listPower.get(deleteNum);
+				ans = ans + max;
 				listPower.remove(deleteNum);
 				listCost.remove(deleteNum);
 			}
