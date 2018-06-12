@@ -15,12 +15,12 @@ public class App {
 			num++;
 		}
 
+		int mp = Integer.parseInt(args[1]);
 		int ans = 0;
-		int max = 0;
 		int deleteFlg = 1;
 
 		while (deleteFlg == 1) {
-			int mp = Integer.parseInt(args[1]);
+			int max = 0;
 			int power = 0;
 			int cost = 0;
 			int deleteNum = 0;
