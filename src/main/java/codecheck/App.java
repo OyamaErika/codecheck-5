@@ -1,4 +1,4 @@
-package codecheck;
+package main.java.codecheck;
 
 import java.util.ArrayList;
 
@@ -44,5 +44,5 @@ public class App {
 			}
 		}
 		System.out.println(ans);
-		}
 	}
+}
